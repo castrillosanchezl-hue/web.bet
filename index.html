@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fracciones al Rescate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Fracciones al Rescate</h1>
+            <h2>Juego y Web para Aprender la Suma de Fracciones</h2>
+            <p>
+                Aprende lo necesario sobre fracciones y cómo sumarlas, 
+                para luego poner a prueba tus habilidades en nuestro juego.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección: Descripción del proyecto -->
+        <section class="section" id="proyecto">
+            <h2>¿De qué trata nuestro proyecto?</h2>
+            <p>
+                Nuestro proyecto consiste en crear una página web y un juego interactivo, 
+                con el objetivo de ayudar a aprender y entender mejor la <strong>suma de fracciones</strong>.
+            </p>
+            <p>
+                Queremos que el aprendizaje sea más dinámico y divertido, usando herramientas digitales 
+                que permitan practicar y reforzar este tema de forma fácil y entretenida.
+            </p>
+            <p>
+                Con esta propuesta buscamos incentivar el interés por las matemáticas y facilitar el 
+                aprendizaje para todos los estudiantes y/o personas que simplemente quieren una forma diferente 
+                de aprender o reforzar sus conocimientos.
+            </p>
+
+            <h3>Integrantes</h3>
+            <ul>
+                <li>Jorge Andres Rodriguez Buitrago</li>
+                <li>Erik Sebastian Rojas Villegas</li>
+                <li>Laura Valentina Castrillo Sánchez</li>
+            </ul>
+        </section>
+
+        <!-- Sección: Teoría básica -->
+        <section class="section" id="teoria">
+            <h2>1. ¿Qué es una fracción?</h2>
+            <p>
+                Una <strong>fracción</strong> representa una parte de un todo. Se escribe como:
+            </p>
+            <p class="formula">
+                <strong>a / b</strong>
+            </p>
+            <ul>
+                <li><strong>a</strong> es el <strong>numerador</strong> (las partes que tomas).</li>
+                <li><strong>b</strong> es el <strong>denominador</strong> (en cuántas partes se dividió el todo).</li>
+            </ul>
+        </section>
+
+        <section class="section" id="suma-mismo-den">
+            <h2>2. Suma de fracciones con el mismo denominador</h2>
+            <p>
+                Cuando las fracciones tienen el mismo denominador, simplemente sumamos los numeradores 
+                y dejamos el mismo denominador.
+            </p>
+            <p class="formula">
+                <strong>a/b + c/b = (a + c) / b</strong>
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <p class="ejemplo">
+                2/7 + 3/7 = (2 + 3) / 7 = 5/7
+            </p>
+        </section>
+
+        <section class="section" id="suma-dif-den">
+            <h2>3. Suma de fracciones con distinto denominador</h2>
+            <p>Cuando los denominadores son diferentes seguimos estos pasos:</p>
+            <ol>
+                <li>Encontrar un <strong>denominador común</strong> (generalmente el producto o el MCM).</li>
+                <li>Convertir cada fracción a una fracción equivalente con ese denominador común.</li>
+                <li>Sumar los numeradores.</li>
+                <li>Simplificar (si es posible) el resultado.</li>
+            </ol>
+
+            <p><strong>Ejemplo:</strong></p>
+            <p class="ejemplo">
+                1/4 + 1/6
+            </p>
+            <ul>
+                <li>Denominador común: 12</li>
+                <li>1/4 = 3/12</li>
+                <li>1/6 = 2/12</li>
+            </ul>
+            <p class="ejemplo">
+                1/4 + 1/6 = 3/12 + 2/12 = 5/12
+            </p>
+        </section>
+
+        <!-- Sección: Ejemplos resueltos -->
+        <section class="section" id="ejemplos">
+            <h2>4. Ejemplos resueltos</h2>
+            <div class="ejemplo-card">
+                <h3>Ejemplo 1</h3>
+                <p>3/5 + 1/5 = (3 + 1)/5 = 4/5</p>
+            </div>
+            <div class="ejemplo-card">
+                <h3>Ejemplo 2</h3>
+                <p>2/3 + 1/6</p>
+                <p>
+                    Denominador común: 6<br>
+                    2/3 = 4/6 y 1/6 = 1/6<br>
+                    Entonces: 4/6 + 1/6 = 5/6
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección: Práctica interactiva -->
+        <section class="section" id="practica">
+            <h2>5. ¡Practica la suma de fracciones!</h2>
+            <p>
+                Resuelve el siguiente ejercicio. Escribe tu respuesta como una fracción en la forma 
+                <strong>numerador/denominador</strong>.
+            </p>
+
+            <div class="practica-card">
+                <p id="fraccion-problema" class="formula">...</p>
+
+                <label for="respuesta">Tu respuesta:</label>
+                <input type="text" id="respuesta" placeholder="Ej: 3/4">
+
+                <div class="botones-practica">
+                    <button id="btn-verificar">Verificar</button>
+                    <button id="btn-nuevo">Nuevo ejercicio</button>
+                </div>
+
+                <p id="mensaje-resultado" class="mensaje"></p>
+            </div>
+        </section>
+
+        <!-- Sección: Botón para ir al juego -->
+        <section class="section cta" id="juego">
+            <h2>¿Listo para llevar tus fracciones al siguiente nivel?</h2>
+            <p>
+                Cuando ya te sientas cómodo sumando fracciones, haz clic en el siguiente botón 
+                para jugar nuestro juego interactivo y poner a prueba tus habilidades.
+            </p>
+            <!-- AQUÍ LUEGO PEGAS EL ENLACE REAL DEL JUEGO -->
+            <a id="btn-juego" href="#" class="btn-juego">
+                ¡Ir al juego de Fracciones al Rescate!
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Fracciones al Rescate &copy; 2025 - Proyecto educativo de suma de fracciones CUN.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
